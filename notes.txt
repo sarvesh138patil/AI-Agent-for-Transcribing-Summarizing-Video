@@ -1,0 +1,19 @@
+conda create -n video_summarizer python=3.9
+
+conda activate demo
+
+conda install -c conda-forge ffmpeg           -- operates audio and video files 
+
+conda install pytorch torchvision torchaudio cpuonly -c pytorch 
+
+pip install -U openai-whisper -- speech recognition engine
+
+pip install transformers
+
+pip install moviepy
+
+pip install transformers
+
+pip install streamlit
+
+streamlit run app.py
